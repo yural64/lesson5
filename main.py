@@ -1,5 +1,5 @@
 class Warrior(): #класс Воин
-    def init (self, name, power, endurance, hair_color): #функция init (конструктор класса)
+    def __init__ (self, name, power, endurance, hair_color): #функция __init__ (конструктор класса)
         # с указанием характеристик класа: имя, сила, выносливость, цвет волос
         self.name = name #привязываем характеристики к этому классу
         self.power = power
@@ -27,3 +27,21 @@ class Warrior(): #класс Воин
         print(f"цвет волос воина - {self.hair_color}")
         print(f"сила воина - {self.power}")
         print(f"выносливость воина - {self.endurance}")
+
+# Создаем объект war1 класса Warrior со своими конкретными атрибутами
+war1 = Warrior(name = "Степа", power = 76, endurance = 54, hair_color = "коричневый")
+war2 = Warrior(name = "Егор", power = 45, endurance = 23, hair_color = "блонд")
+
+war1.info()
+war1.sleep()
+war1.eat()
+war1.hit()
+war1.walk()
+war1.info()
+
+war2.info()
+war2.sleep()
+war2.eat()
+war2.hit()
+war2.walk()
+war2.info()
