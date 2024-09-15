@@ -13,3 +13,12 @@ class Task():
                 print(f"Задача {description} выполнена")
             else:
                 print(f"Задача {description} не найдена")
+
+    def show_tasks(self):
+        print("Список задач")
+        for task in self.tasks:
+            if task["status"] == "Не выполнено":
+                print(f"{task["description"]} - {task["deadline"]}")
+
+# Выполнение задачи
+t = Task()
